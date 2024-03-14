@@ -208,25 +208,44 @@ z-index: -100;
 .container{
     position: relative;
     
-    
+    height: auto;
 }
 
 .textbox {
     width: 50vw;
-    background-color: rgba(255, 255, 255, 0.5); /* Fundo menos visível */
+    background-color: rgba(143, 202, 131, 0.5); /* Fundo menos visível */
     transition: all 0.3s ease; /* Adiciona uma transição suave */
     position: relative;
     left: 25%;
+    border: 0.1vw black double;
+    border-radius: 0.8vw;
+   
    
   }
   
   .textbox.expanded {
     width: 40vw; /* Largura expandida */
-    height: 20vh
+    height: 20vh;
     
-    ; /* Altura expandida */
-    background-color: rgba(255, 255, 255, 1); /* Fundo mais visível */
+   
+    background-color: rgba(143, 202, 131, 0.5); /* Fundo mais visível */
   }
+
+  .textbox.close {
+
+    width: 50vw;
+    background-color: rgba(143, 202, 131, 0.5); /* Fundo menos visível */
+    transition: all 0.3s ease; /* Adiciona uma transição suave */
+    position: relative;
+    left: 25%;
+    border: 0.1vw black double;
+    border-radius: 0.8vw;
+   
+  }
+
+
+    
+   
   
   textarea {
     width: 100%;
@@ -234,5 +253,28 @@ z-index: -100;
     border: none;
     resize: none; /* Impede o redimensionamento da caixa de texto */
     background-color: transparent; /* Remove o fundo da textarea */
+    color: rgb(8, 52, 8);
+   overflow: hidden;
     
+    
+    
+
+    
+    
+    animation: typing 10s steps(90) forwards;
+    border-right: 0.15vb solid black;
+    
+    
+  }
+
+  /* Animação */
+  @keyframes typing {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    100% {
+      width: 100%;
+      height: 100%;
+    }
   }
