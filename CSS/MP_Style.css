@@ -208,42 +208,45 @@ z-index: -100;
 .container{
     position: relative;
     
-    height: auto;
+    
 }
 
 .textbox {
-    width: 50vw;
+    width: 15vw;
+    height: 10vh;
     background-color: rgba(143, 202, 131, 0.5); /* Fundo menos visível */
     transition: all 0.3s ease; /* Adiciona uma transição suave */
-    position: relative;
+    position: absolute;
     left: 25%;
     border: 0.1vw black double;
     border-radius: 0.8vw;
+    top: 30vw;
+    
+   
    
    
   }
   
-  .textbox.expanded {
-    width: 40vw; /* Largura expandida */
+
+
+  .textbox.expanded{
+    width: 50vw; /* Largura expandida */
     height: 20vh;
     
    
     background-color: rgba(143, 202, 131, 0.5); /* Fundo mais visível */
-  }
-
-  .textbox.close {
-
-    width: 50vw;
-    background-color: rgba(143, 202, 131, 0.5); /* Fundo menos visível */
-    transition: all 0.3s ease; /* Adiciona uma transição suave */
-    position: relative;
-    left: 25%;
-    border: 0.1vw black double;
-    border-radius: 0.8vw;
    
   }
 
+  .textbox textarea{
+    display: none;
+  }
 
+  
+.textbox.expanded textarea {
+    transition: ease-in 3s;
+    display: block;
+}
     
    
   
@@ -261,8 +264,9 @@ z-index: -100;
 
     
     
-    animation: typing 10s steps(90) forwards;
+    animation: typing 5s steps(90) forwards;
     border-right: 0.15vb solid black;
+    
     
     
   }
