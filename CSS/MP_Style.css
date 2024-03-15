@@ -1,5 +1,21 @@
 /* Realizar testes de resolução, Adiccionar janelas, Criar novas interações */
 
+.micro-5-regular {
+  font-family: "Micro 5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.kode-mono- {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100%;
+  font-style: normal;
+}
+
+
 
 html, body{
 margin: 0%;
@@ -212,19 +228,37 @@ z-index: -100;
 }
 
 .textbox {
-    width: 15vw;
-    height: 10vh;
+    width: 2vw;
+    height: 2vh;
     background-color: rgba(143, 202, 131, 0.5); /* Fundo menos visível */
     transition: all 0.3s ease; /* Adiciona uma transição suave */
     position: absolute;
-    left: 25%;
-    border: 0.1vw black double;
-    border-radius: 0.8vw;
-    top: 30vw;
     
+    border-width: 0.5vw 1vw 0.3vw;
+    border-color: #000 ;
+    
+    
+   border-style: double double hidden;
+    border-radius: 0.8vw;
+    
+    
+   background-image: -webkit-linear-gradient(rgba(189, 141, 28, 0.402), rgba(215, 207, 163, 0.301));
    
+  mix-blend-mode: screen;
+   background-image: url(https://i.imgur.com/8LgH4Qm.png);
+   background-position: center;
+   background-blend-mode: overlay;
+   background-size: cover;
+   background-color: rgba(255, 166, 0, 0.772);
    
+   backface-visibility: visible;
+   background-blend-mode: lighten;
+   filter: blur(1vb) brightness(150%);
    
+
+   left: 65%;
+   top: 30vw;
+   animation: fade 2.5s alternate infinite;
   }
   
 
@@ -234,8 +268,13 @@ z-index: -100;
     height: 20vh;
     
    
-    background-color: rgba(143, 202, 131, 0.5); /* Fundo mais visível */
-   
+    background-size: cover;
+    background-image: url(https://i.imgur.com/8LgH4Qm.png);
+    background-position: center center;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 166, 0, 0.772);
+    animation-play-state: paused;
   }
 
   .textbox textarea{
@@ -256,19 +295,21 @@ z-index: -100;
     border: none;
     resize: none; /* Impede o redimensionamento da caixa de texto */
     background-color: transparent; /* Remove o fundo da textarea */
-    color: rgb(8, 52, 8);
+    color: rgb(255, 255, 255);
    overflow: hidden;
     
-    
-    
+    font-family: "Kode Mono", monospace;
+    font-size: 2vb;
+    text-align: center center;
 
     
     
     animation: typing 5s steps(90) forwards;
     border-right: 0.15vb solid black;
     
-    
-    
+   
+  
+   
   }
 
   /* Animação */
@@ -281,4 +322,21 @@ z-index: -100;
       width: 100%;
       height: 100%;
     }
+  }
+
+  @keyframes fade{
+  0%{
+    opacity: 0.2;
+  }
+  40%{
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+
+  100%{
+    opacity: 0.2;
+  }
+
   }
