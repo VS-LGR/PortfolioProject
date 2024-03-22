@@ -62,24 +62,24 @@
   .text-tt {
     position: relative;
     color: white;
-    left: 0.35vw;
-    bottom: -2vh;
+    left: 0.29vw;
+    bottom: -2.3vh;
     text-size-adjust: auto;
   }
  
-  @media only screen and (max-width: 768px){
+  @media only screen and (max-width: 767px){
     .text-tt{
         position: relative;
         color: white;
         left: 0.35vw;
-        bottom: -2.65vh;
+        bottom: -2.55vh;
         text-size-adjust: auto;
-        scale: 0.4;
+        scale: 0.38;
     }
 
     .tooltip .icon {
         display: inline-block;
-        width: 4vw;
+        width: 3vw;
         height: 2.2vh;
         background-color: #4caf50;
         color: #000000;
@@ -93,5 +93,120 @@
         opacity: 0.5;
        
         
+        
       }
+
+      .tooltiptext {
+        visibility: hidden;
+        width: auto;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 0.05vb;
+        padding: 0.5vw;
+        position: absolute;
+        z-index: 1;
+        top: 65%;
+        left: -78%;
+        margin-left: -6.1vw;
+        opacity: 0;
+        transition: opacity 0.3s;
+        scale: 0.3;
+        text-wrap: nowrap;
+      }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .text-tt{
+      position: relative;
+      color: white;
+      left: 0.6vw;
+      bottom: -1.95vh;
+      text-size-adjust: auto;
+      scale: 0.58;
+  }
+
+  .tooltip .icon {
+    display: inline-block;
+    width: 3vw;
+    height: 2vh;
+    background-color: #4caf50;
+    color: #000000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.2vb;
+    filter: brightness(150%) blur(0.3vw);
+    z-index: -5;
+    scale: 0.8;
+    opacity: 0.5;
+      
+      
+    }
+
+    .tooltiptext {
+      visibility: hidden;
+      width: auto;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 0.05vb;
+      padding: 0.5vw;
+      position: absolute;
+      z-index: 1;
+      top: 69%;
+      left: 64%;
+      margin-left: -6.1vw;
+      opacity: 0;
+      transition: opacity 0.3s;
+      scale: 0.5;
+      text-wrap: nowrap;
+    }
+  }
+
+  @media screen and (min-width: 1025px) and (max-width: 1240px) {
+  
+    .text-tt{
+      position: relative;
+      color: white;
+      left: 0.2vw;
+      bottom: -2.95vh;
+      text-size-adjust: auto;
+      scale: 0.58;
+  }
+
+  .tooltip .icon {
+    display: inline-block;
+    width: 1.5vw;
+    height: 2.5vh;
+    background-color: #4caf50;
+    color: #000000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.2vb;
+    filter: brightness(150%) blur(0.3vw);
+    z-index: -5;
+    scale: 0.8;
+    opacity: 0.5;
+      
+      
+    }
+
+    .tooltiptext {
+      visibility: hidden;
+      width: auto;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 0.05vb;
+      padding: 0.5vw;
+      position: absolute;
+      z-index: 1;
+      top: 69%;
+      left: 168%;
+      margin-left: -6.1vw;
+      opacity: 0;
+      transition: opacity 0.3s;
+      scale: 0.5;
+      text-wrap: nowrap;
+    }
   }
